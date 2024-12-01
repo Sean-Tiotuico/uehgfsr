@@ -1,0 +1,17 @@
+CHIP A5Q2<your student ID> {
+IN H, V, J;
+OUT U;
+
+PARTS:
+Not (in = H), out = notH);
+
+And (a = H, b = V, out = AndHV);
+
+Or (a = V, b = NotH, out = OrVH);
+
+Or (a=OrVH, b=AndHV, out = OrOrAnd);
+
+And (a = OrOrAnd, b=J, out = U);
+
+}
+
