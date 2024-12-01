@@ -2,9 +2,9 @@ CHIP A5Q2201852257{
 IN H, V, J;
 OUT U;
 PARTS:
-Not (in = H, out = NotH);
-And (a = H, b = V, out = AndHV);
-Or (a = V, b = NotH, out = OrVH);
-Or (a=OrVH, b=AndHV, out = OrOrAnd);
-And (a = OrOrAnd, b=J, out = U);
+Not (in = H, out = notH);
+And (a = H, b = V, out = andHV);
+Or (a = V, b = notH, out = orVH);
+Or (a=orVH, b=andHV, out = ororand);
+And (a = ororand, b=J, out = U);
 }
